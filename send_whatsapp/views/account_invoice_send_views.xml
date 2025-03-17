@@ -1,0 +1,23 @@
+<odoo>
+    <record id="view_account_invoice_send_form_inherit_whatsapp" model="ir.ui.view">
+        <field name="name">account.invoice.send.form.inherit.whatsapp</field>
+        <field name="model">account.invoice.send</field>
+        <!-- <field name="inherit_id" ref="account.view_account_invoice_send_form"/> -->
+        <field name="inherit_id" ref="account.account_invoice_send_wizard_form"/>
+
+
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='send_and_print_action']" position="after">
+                <button name="send_whatsapp" string="Send via WhatsApp" type="object" class="oe_highlight"/>
+            </xpath>
+
+
+            <!-- <xpath expr="//div[@name='mail_form']" position="before">
+                <group>
+                    <field name="mobile"/>
+                </group>
+            </xpath> -->
+        </field>
+    </record>
+
+</odoo>

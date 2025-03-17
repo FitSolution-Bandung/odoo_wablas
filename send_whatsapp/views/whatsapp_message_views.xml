@@ -1,0 +1,57 @@
+<odoo>
+
+    <!-- urutkan berdasarkan sent_at urutan dari yang paling baru -->
+    <record id="view_whatsapp_message_tree" model="ir.ui.view">
+        <field name="name">whatsapp.message.tree</field>
+        <field name="model">whatsapp.message</field>
+        <field name="arch" type="xml">
+        
+            <tree default_order="sent_at desc"  >
+                
+                <field name="name"/>
+                <field name="recipient"/>
+                <field name="message"/>
+                <field name="attachment_id"></field>
+                <field name="sender"/>
+                <field name="message_type"/>
+                <field name="status"/>
+                <field name="sent_at"/>
+                <!-- ... (other fields) -->
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_whatsapp_message_form" model="ir.ui.view">
+        <field name="name">whatsapp.message.form</field>
+        <field name="model">whatsapp.message</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="recipient"/>
+                        <field name="message"/>
+                        <field name="attachment_id"></field>
+                        <field name="sender"/>
+                        <field name="message_type"/>
+                        <field name="status"/>
+                        <field name="sent_at"/>
+
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="action_send_whatsapp_history" model="ir.actions.act_window">
+        <field name="name">WhatsApp Message History</field>
+        <field name="res_model">whatsapp.message</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[]</field>
+    </record>
+
+
+
+</odoo>

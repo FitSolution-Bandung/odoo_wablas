@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_whatsapp_message,access.whatsapp.message,model_whatsapp_message,base.group_user,1,1,1,1
+access_whatsapp_composer,whatsapp.composer,model_whatsapp_composer,,1,1,1,1
+access_wablas_qrcode_wizard,wablas.qrcode.wizard,model_wablas_qrcode_wizard,,1,1,1,1

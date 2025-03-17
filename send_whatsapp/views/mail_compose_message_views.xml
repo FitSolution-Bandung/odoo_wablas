@@ -1,0 +1,20 @@
+<odoo>
+    <record id="view_mail_compose_message_form_inherit_whatsapp" model="ir.ui.view">
+        <field name="name">mail.compose.message.form.inherit.whatsapp</field>
+        <field name="model">mail.compose.message</field>
+        <field name="inherit_id" ref="mail.email_compose_message_wizard_form"/>
+
+        <field name="arch" type="xml">
+            <!-- <xpath expr="footer" position="inside">
+                <button name="send_whatsapp_action" string="Send via WhatsApp" type="object" class="oe_highlight"/>
+            </xpath> -->
+
+
+            <xpath expr="//button[@name='action_send_mail']" position="after">
+                <button name="send_whatsapp" string="Send via WhatsApp" type="object" class="oe_highlight"/>
+            </xpath>
+
+
+        </field>
+    </record>
+</odoo>

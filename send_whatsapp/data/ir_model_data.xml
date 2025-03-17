@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="model_whatsapp_message" model="ir.model">
+        <field name="name">whatsapp.message</field>
+        <field name="model">whatsapp.message</field>
+    </record>
+</odoo>
+
