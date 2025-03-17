@@ -14,7 +14,7 @@
     'author': "PT. Fujicon Priangan Perdana",
     'website': "https://www.fujicon-japan.com",
     'category': 'Extra Tools',
-    'version': '0.1.1',
+    'version': '16.0.0',
     'sequence': -100,
     'images': ['images/wablas.gif'],
     'depends': ['base', 'account','sale_management','contacts'],
