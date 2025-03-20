@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Send Quotation/Invoices to Whatsapp",
+    'name': "MESSAGO - Send Quotation/Invoices to Whatsapp",
     'summary': "Addon ini mengizinkan pengguna untuk mengirim lampiran langsung melalui layanan pesan WhatsApp.",
     'description': """
         Addon ini mengizinkan pengguna untuk mengirim 
